@@ -1,0 +1,19 @@
+$black: #242a2d
+$white: #f6fdff
+$accent: #ee82ee
+$blue: #00bfff
+$green: #20b2aa
+$yellow: #ffd700
+$red: #f08080
+
+$color-scale-steps: 3
+
+$black-color-family: ()
+$white-color-family: ()
+
+@for $i from 0 through $color-scale-steps
+  $white-color: lighten($white, ($i * 10))
+  $white-color-family: map-merge($white-color-family, ('white-'+$i: $white-color))
+
+  $black-color: lighten($black, ($i * 10))
+  $black-color-family: map-merge($black-color-family, ('black-'+$i: $black-color))

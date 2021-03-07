@@ -1,0 +1,20 @@
+{
+    "name": "Vue·Seed",
+    "description": "Vue Base playground",
+    "common":
+    {
+        "open": "Open",
+        "close": "Close",
+        "button": "Button",
+        "loading": "Loading...",
+        "spanish": "Español",
+        "english": "English"
+    },
+    "sections":
+    {
+        "index":
+        {
+            "title": "Index"
+        }
+    }
+}

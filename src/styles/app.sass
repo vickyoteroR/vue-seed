@@ -1,0 +1,50 @@
+@charset 'utf-8'
+
+@import 'reset'
+@import 'fonts/index'
+@import 'helpers/index'
+@import 'variables/color-themes/default'
+@import 'variables/color-themes/dark'
+
+html,
+body,
+.app
+  width: 100%
+  height: 100%
+
+body
+  font-family: 'lato-light'
+  line-height: $lineHeight
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong
+    font-family: 'lato-bold'
+
+.app
+    color: var(--main-text-color)
+    background-color: var(--main-background-color)
+
+    &__theme
+        &--default
+            @each $theme in $default-theme
+                @include build-css-variables($theme)
+
+
+        &--dark
+            @each $family in $dark-theme
+                @include build-css-variables($family)
+
+.hide
+    display: none
+
+    &--accessible
+        position: absolute
+        width: 0
+
+        pointer-events: none
+        overflow: hidden

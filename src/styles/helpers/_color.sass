@@ -1,0 +1,5 @@
+$color-variables: ('--main-background-color', '--main-text-color', '--main-border-color', '--main-shadow-color')
+
+@each $name in $color-variables
+  .color--#{$name}
+    color: var($name)
