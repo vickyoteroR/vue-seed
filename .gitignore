@@ -1,0 +1,10 @@
+.idea
+.npmrc
+.sass-cache
+.vscode
+*.log
+*.thumb
+node_modules
+npm-debug.log
+dist/
+www/
